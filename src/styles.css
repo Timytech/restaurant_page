@@ -1,0 +1,134 @@
+body {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #F8FCFF;
+    min-height: 100vh;
+}
+
+header {
+    border-bottom: 2px solid #6F4E37;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav button {
+    background-color: #7393B3;
+    color: white;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, text-decoration 0.2s ease;
+}
+
+nav button:hover {
+    text-decoration: underline;
+    background-color: #008080;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3), 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav button:active {
+    transform: translateY(0);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#content {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+h1 {
+    color: teal;
+    margin-top: 0;
+    text-align: center;
+}
+
+#canvas {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    display: block; 
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);}
+
+#canvas-info {
+    font-size: 0.8rem;
+    color: #4A4A4A;
+}
+
+#welcome-note,
+#about-note {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+footer {
+    border-top: 2px solid #6F4E37;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dish {
+    margin: 20px;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dish h4 {
+    margin: 10px 0;
+}
+
+
+.dish p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    margin: 10px 10px;
+}
+
+.dish:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    border-color: #008080;
+}
